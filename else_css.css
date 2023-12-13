@@ -1,0 +1,148 @@
+/* get font(s) */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Emoji:wght@500&family=VT323&display=swap');
+
+html {
+    background-color: #1a1a21 !important;
+    margin: 2em;
+    font-size: 100%;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+iframe
+{
+  border: none;
+}
+
+
+td, th {
+  font-size: smaller;
+  border: 1px solid #9eaaaa;
+  text-align: center;
+  padding: 12px;
+}
+
+table.center
+{
+  margin-left: auto; 
+  margin-right: auto;
+}
+
+tr:nth-child(even) {
+  background-color: #2d2d34;
+}
+
+
+h1
+{
+    font-size: 64px;
+    color:#9fcbcc !important;
+    font-family: "VT323";
+}
+
+h1.gradient{
+  background: -webkit-linear-gradient(302deg, #3941d3 3%, rgb(227, 248, 174) 16%, #9bf1f6 29%, rgb(72, 204, 241) 48%, #3442db 74%, #450abb 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+p.quote
+{
+  color: #9eaaaa;
+  border:8px solid #23232b;
+  background:#363641;
+  border-radius:25px;
+  -moz-border-radius:25px;
+
+  font-style: oblique;
+  font-weight: lighter;
+  margin-right: 150px;
+  margin-left: 150px;
+  font-size: smaller;
+}
+
+body
+{
+    margin-right: 250px;
+    margin-left: 250px;
+    color: #cad4da;
+    font-family: monospace;
+    /*display: flex; */
+    text-align: center;
+    padding-top: 1em;
+    font-size: 20px;
+}
+
+
+/* From https://dev.to/tiaeastwood/super-simple-css-animation-for-fade-in-on-page-load-2p8m */
+@keyframes fadeInUp {
+    0% {
+      
+      opacity: 0;
+    }
+    100% {
+   
+      opacity: 1;
+    }
+  }
+  
+  .fadeInUp-animation {
+    animation: 1s fadeInUp;
+  }
+
+
+  .navBar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #1a1a21;
+  }
+  
+  .navPages {
+    display: inline-block;
+  }
+  
+  .navPages a {
+    color: #5790db;
+    display: inline-block;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    overflow: hidden
+  }
+  
+dfn
+{
+  color: #d0d269 !important;
+  font-weight: bold !important;
+}
+
+
+a {
+    color: #57c1db;
+    font-weight: bold;
+    -o-transition:color .2s ease-out, background 1s ease-in;
+    -ms-transition:color .2s ease-out, background 1s ease-in;
+    -moz-transition:color .2s ease-out, background 1s ease-in;
+    -webkit-transition:color .2s ease-out, background 1s ease-in;
+    transition:color .2s ease-out, background 1s ease-in;
+  }
+  a:hover { color:#5752b6; background: #14141a; }
+
+
+section {
+    margin: 1rem;
+}
+
+.scalesvg{
+    width: 80%;
+}
+
+::selection {
+    color: #edeef0;
+    background: rgb(26, 132, 151);
+  }

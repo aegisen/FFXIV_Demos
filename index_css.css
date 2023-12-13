@@ -1,0 +1,81 @@
+html {
+    background-color: #1a1a21 !important;
+    margin: 2em;
+    font-size: 100%;
+}
+
+/*
+article {
+      from https://codepen.io/argyleink/pen/wvMxEXM  
+    background: radial-gradient(
+      hsl(243, 57%, 41%), 
+      hsl(178, 100%, 60%)
+    ) fixed;
+    background: conic-gradient(
+        hsl(243, 57%, 41%),
+        hsl(178, 100%, 60%),
+        hsl(243, 57%, 41%)
+    ) fixed;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+  } */
+  .typewriter h1 {
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: .25em solid rgb(0, 47, 255); /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .15em; /* Adjust as needed */
+    animation: 
+      typing 3.5s steps(40, end),
+      blink-caret .75s step-end infinite;
+  }
+  
+body
+{
+    display: flex;
+    justify-content: center;
+    padding-top: 5em;
+}
+h1
+{
+    color: #cec9d2;
+    font-family: monospace;
+}
+
+  /* The typing effect */
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+  
+  /* The typewriter cursor effect */
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: rgb(56, 205, 238); }
+  }
+  
+
+a {
+    color: #57c1db;
+    -o-transition:color .2s ease-out, background 1s ease-in;
+    -ms-transition:color .2s ease-out, background 1s ease-in;
+    -moz-transition:color .2s ease-out, background 1s ease-in;
+    -webkit-transition:color .2s ease-out, background 1s ease-in;
+    transition:color .2s ease-out, background 2s ease-in;
+  }
+  a:hover { color:#625cd3; background: #353238; }
+
+
+section {
+    margin: 2rem;
+}
+
+.scalesvg{
+    width: 80%;
+}
+
+::selection {
+    color: #edeef0;
+    background: rgb(26, 132, 151);
+  }
